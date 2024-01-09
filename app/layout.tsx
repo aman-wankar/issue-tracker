@@ -27,10 +27,12 @@ export default function RootLayout({
       <body className={inter.variable}>
         <AuthProvider>
           <Theme appearance='light' accentColor='violet'>
+              <Container>
             <NavBar />
             <main className='p-5'>
-              <Container>{children}</Container>
+                {children}
             </main>
+                </Container>
           </Theme>
         </AuthProvider>
       </body>
