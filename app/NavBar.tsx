@@ -73,6 +73,7 @@ const AuthStatus = () => {
               src={session.user!.image!}
               size='2'
               className='cursor-pointer'
+              referrerPolicy='no-referrer'
             />
           </DropdownMenu.Trigger>
           <DropdownMenu.Content>
