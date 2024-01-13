@@ -1,7 +1,6 @@
 import { Status } from '@prisma/client';
 import { Card, Flex, Text } from '@radix-ui/themes';
 import Link from 'next/link';
-import React from 'react';
 
 interface Props {
   open: number;
@@ -17,7 +16,7 @@ const IssueSummary = ({ open, inProgress, closed }: Props) => {
   ];
 
   return (
-    <Flex gap='4'>
+    <Flex gap='4' justify='between'>
       {containers.map((container) => (
         <Card key={container.label}>
           <Flex direction='column' gap='1'>
